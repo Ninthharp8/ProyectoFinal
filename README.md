@@ -37,7 +37,7 @@
 
 ## GIT REMOTE
 
-`git remote add <nombre> <url>`: Agrega un nuevo repositorio remoto con un nombre especificado. Por ejemplo, git remote add origin https://ejemplo.com/repo.git.
+`git remote add <nombre> <url>`: Agrega un nuevo repositorio remoto con un nombre especificado. Por ejemplo, `git remote add origin https://ejemplo.com/repo.git.`
 
 `git remote remove <nombre>`: Elimina el repositorio remoto especificado.
 
