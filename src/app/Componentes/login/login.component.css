@@ -1,6 +1,4 @@
-/* body{
-    background-color: gray;
-} */
+
 body{
     background-image: url("../../../assets/back.jpg");
     background-size:cover;
@@ -61,6 +59,7 @@ header {
 
 i{
     position: relative;
+    top: -31px;
     left: 17px;
     color: #fff;
 }
