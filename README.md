@@ -34,3 +34,25 @@
 `git log` Muestra el historial de commits en la rama actual.
 
 `git log --oneline` Muestra el historial de commits en una línea por commit.
+
+## GIT REMOTE
+
+`git remote add <nombre> <url>`: Agrega un nuevo repositorio remoto con un nombre especificado. Por ejemplo, git remote add origin https://ejemplo.com/repo.git.
+
+`git remote remove <nombre>`: Elimina el repositorio remoto especificado.
+
+`git remote rename <nombre_antiguo> <nombre_nuevo>`: Cambia el nombre del repositorio remoto.
+
+`git remote -v o git remote --verbose`: Muestra los nombres y las URL de los repositorios remotos configurados.
+
+`git remote show <nombre>`: Muestra información detallada sobre un repositorio remoto en particular.
+
+`git remote update`: Actualiza la información remota. Descarga todos los datos del repositorio remoto, pero no fusiona ninguno de los cambios en tu rama local.
+
+`git remote prune <nombre>`: Elimina las referencias a ramas eliminadas en el repositorio remoto.
+
+`git remote set-url <nombre> <nueva_url>`: Cambia la URL del repositorio remoto.
+
+`git remote get-url <nombre>`: Obtiene la URL de un repositorio remoto.
+
+`git remote show origin` : Muestra información específica sobre el repositorio remoto llamado "origin".
