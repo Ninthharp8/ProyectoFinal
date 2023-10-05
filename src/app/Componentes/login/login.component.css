@@ -41,12 +41,13 @@ header {
 }
 .input-field{
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    align-items: center;
     margin-bottom: 15px;
 
 }
 
-.input-field .input {
+.input-field .input{
     height: 45px;
     width: 87%;
     border: none;
