@@ -1,1 +1,21 @@
-<p>productos works!</p>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  
+<div *ngFor="let producto of productos!" class="card product" style="width: 18rem;">
+  <img [src]="producto.imageUrl" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">{{ producto.name }}</h5>
+    <p class="card-text">Precio: {{ producto.price }}</p>
+    <a href="#" class="btn btn-primary">Agregar al carrito</a>
+  </div>
+</div>
+  
+</body>
+</html>
+  
