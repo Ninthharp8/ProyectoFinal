@@ -6,6 +6,24 @@
   <title>Document</title>
 </head>
 <body>
+
+  <header class="d-flex  p-3  text-white">
+    <div class="d-flex align-items-center">
+        <img src="assets/Logo1.jpeg" alt="Logo AMJ Shop" class="mr-2" style="width: 60px; height: 60px;">
+        <h5 class="m-0">AMJ Shop</h5>
+    </div>
+    <div class="input-group">
+        <input type="text" class="form-control" placeholder="Buscar" aria-label="Buscar" aria-describedby="button-addon2">
+        <button class="btn btn-outline-secondary" type="button" id="button-addon2">
+            <i class="bi bi-search"></i>
+        </button>
+    </div>
+
+    <button class="btn btn-outline-secondary"  type="button" > <i class="bi bi-cart4"></i> </button>
+
+    
+</header>
+
   <nav class=" ">
     <ul>
       <li><a routerLink="/">Inicio</a></li>
@@ -15,29 +33,18 @@
       <li><a routerLink="/carrito">Ver Carrito</a></li>
 
 
-      <button class="btn btn-outline-secondary  " type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css"><i class="bi bi-list"></i></button>
-
-      <div class="offcanvas offcanvas-end" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions" aria-labelledby="offcanvasWithBothOptionsLabel">
-        
+      <button class="btn btn-outline-secondary  " type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions"><i class="bi bi-list"></i></button>
+      <div class="offcanvas offcanvas-end" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions" aria-labelledby="offcanvasWithBothOptionsLabel">    
         <div class="offcanvas-header">
           <h5 class="offcanvas-title" id="offcanvasDarkLabel">carrito</h5>
           <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
         </div>
-
         <div class="offcanvas-body">
           <p> Aqui va lo demás</p>
         </div>
-      </div>
-      
+      </div> 
+
     </ul>
-   
-
-    
-
-
-
-
-
   </nav>
   
   <!-- Contenido de la página principal -->
