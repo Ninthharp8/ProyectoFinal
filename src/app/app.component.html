@@ -6,8 +6,17 @@
     <title>Document</title>
 </head>
 <body>
-    <router-outlet></router-outlet>
+    <header class="d-flex container-fluid">
+        <a class="navbar-brand" routerLink="/">
+          <div class="d-flex align-items-center">
+              <img src="assets/Logo1.jpeg" alt="Logo AMJ Shop" class="mr-2" style="width: 60px; height: 60px;">
+              <h5 class="m-0">AMJ Shop</h5>
+          </div>
+        </a >
+     
+    </header>
     
-   
+    <router-outlet></router-outlet>
+
 </body>
 </html>

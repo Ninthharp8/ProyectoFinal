@@ -1,66 +1,36 @@
-header{
-  font-family:Press Start 2P, "Times New Roman";
-
-  background-color:rgb(0, 21, 48);
-  align-items:center;
-  justify-content: space-between;
-
-}
-
 
 nav {
-    background-color: #333;
-    color: #fff;
-    padding: 15px 0;
-    text-align: center;
-  }
+  background-color: #333;
   
-  ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-  }
   
-  li {
-    display: inline;
-    margin-right: 50px;
-    
-  }
-  
-  a {
-    color: #fff;
-    text-decoration: none;
-    font-weight: bold;
-  }
-  
-  /* Estilos para los productos */
-  .container {
-    display: flex; 
-    flex-wrap: nowrap; 
-    overflow-x: auto; 
-    margin-top: 20px;
-    padding-bottom: 20px; 
-  }
-  
-  .product {
-    width: calc(33.33% - 20px); 
-    margin-right: 20px; 
-    background-color: #f9f9f9;
-    border: 1px solid #ddd;
-    padding: 10px;
-    text-align: center;
-  }
-  
+}
 
-  img {
-    
-    align-items: center;
-    align-content: center;
-  }
-  
-  .bo{
-    display: flex;
-    justify-content: right;
-    align-items: right;
-  }
-  
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  display: inline;
+  margin-right: 20px;
+}
+
+a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.container {
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  margin-top: 20px;
+  padding-bottom: 20px;
+}
+
+.product {
+  width: 18rem;
+  margin-right: 20px;
+}
