@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -7,35 +6,33 @@
     <title>Login</title>
 </head>
 <body>
-
-    <div class="box">
-        <div class="container">
-            <div class="top-header">
-                <span> Login </span>
-                <header> Iniciar Sesion </header>
-            </div>
-            <div class="input-field">
-                <input type="text" class="input" placeholder="Usuario" required>
-            </div>
-            <div class="input-field">
-                <input type="password" class="input" placeholder="Contraseña" required>
-            </div>
-            <div class="input-field">
-                <input type="submit" class="submit btn btn-primary" value="Inicio">
-                
-            </div>
-            <div class="bottom">
-                <div class="left">
-                    <input type="checkbox" id="check">
-                    <label for="check">Recordarme</label>
-                </div>
-                <div class="right">
-                    <label>
-                        <a href="#">¿Olvidaste tu contraseña? </a>
-                   </label>
-                </div>
+    <section>
+        <div class="form-box">
+            <div class="form-value">
+                <form action="">
+                    <h2>Login</h2>
+                    <div class="inputbox">
+                        <i class="bi bi-envelope-fill"></i>
+                        <input type="email" required>
+                        <label for="">Email</label>
+                    </div>
+                    <div class="inputbox">
+                        <i class="bi bi-lock-fill"></i>
+                        <input type="password" required>
+                        <label for="">Password</label>
+                    </div>
+                    <div class="forget">
+                        <label for=""><input type="checkbox">  Recordarme 
+                            <a href="#">Olvide la contraseña</a>
+                        </label> 
+                    </div>
+                    <button>Log in</button>
+                    <div class="register">
+                        <p>No tengo una cuenta <a routerLink="/signup" >Registrarme</a></p>
+                    </div>
+                </form>
             </div>
         </div>
-    </div>  
+    </section>
 </body>
 </html>
