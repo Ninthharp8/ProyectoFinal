@@ -3,17 +3,16 @@ header {
   background-color: #001530; 
 }
 
-/* Estilos para las listas desordenadas (ul) en el encabezado */
-ul {
-  list-style-type: none; 
-  margin: 0;
-  padding: 0; 
+/*Estilo del off canva*/
+.offcanvas {
+  background-color: #1e293b;
 }
-
-/* Estilos para los elementos de la lista (list items) en el encabezado */
-li {
-  display: inline; 
-  margin-right: 20px;
+.navbar-toggler {
+  border: none;
+}
+.navbar-toggler:focus {
+  outline: none;
+  box-shadow: none;
 }
 
 /* Estilos para el menú desplegable */
@@ -22,6 +21,10 @@ li {
   left: unset; 
   right: 0px ; 
   margin-top: var(--bs-dropdown-spacer);
+}
+
+hr{
+  color: #fff;
 }
 
 /* Estilos para el contenedor del carrito de compras */

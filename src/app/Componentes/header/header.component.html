@@ -1,14 +1,16 @@
 <header>
-    <nav class="navbar navbar-expand-lg"> 
-        <!-- Logo con url-->
+    <nav class="navbar navbar-expand-lg "> 
         <div class="container-fluid">
-            <div class="navbar-brand collapse navbar-collapse" id="navbarSupportedContent">
+            <div class="navbar-brand collapse navbar-collapse text-info fw-semibold fs-4" id="navbarSupportedContent">
+                <!--Botton hamburguesa que despliega el offcanva-->
                 <button class="btn btn-outline-light  " type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions"><i class="bi bi-list"></i></button>
+                <!-- Logo con url-->
                 <a class="navbar-brand fs-2 fw-bold text-white" href="#">
                     <img src="assets/Logo1.jpeg" alt="Logo AMJ Shop" style="width: 60px; height: 60px;">
                     <span>AMJ SHOP</span>
                 </a>
             </div>
+            
             <!-- Buscador-->
             <form class="d-flex me-3" role="search">
                 <div class="input-group ">
@@ -38,7 +40,8 @@
                     <div class="CartContainer">
                     <div class="row">
                         <div class="col-12 text-end">
-                        <button class="btn btn-sm btn-success">comprar</button>
+                        <button class="btn btn-sm btn-success">Pagar</button>
+                        <button class="btn btn-sm btn-danger">Eliminar</button>
                         </div>
                     </div>
                     </div>
@@ -48,20 +51,31 @@
         </div>
     </nav>
     <!-- Este es la parte del offcanvas que se despliega al precionar el botton de hamburguesa-->
-    <div class="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions" aria-labelledby="offcanvasWithBothOptionsLabel">
+    <section class="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions" aria-labelledby="offcanvasWithBothOptionsLabel">
         <!-- Encabezado del off canvas -->
-        <div class="offcanvas-header">
-        <!--titulo-->
-        <h5 class="offcanvas-title" id="offcanvasWithBothOptionsLabel">Categorias</h5>
-        <!-- boton de cierre de pestaña off canvas-->
-        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        <div class="offcanvas-header ">
+            <h5 class="offcanvas-title text-info text-white" id="offcanvasWithBothOptionsLabel">Categorias</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            
         </div>
+        <hr>
         <!-- Cuerpo del off canvas-->
-        <div class="offcanvas-body">
-        <!-- Enlaces que redireccionaran -->
-        <ul class=" ">
-            <li class="nav-item"><a class="nav-link " aria-current="page" href="#">Camisas</a></li>
-        </ul>
+        <div class="offcanvas-body d-flex flex-column justify-content-between px-0 text-white">
+            <!-- Enlaces que redireccionian una consulta -->
+            <ul class="navbar-nav fs-5 justify-content-evenly">
+                <li class="nav-item p-3 py-md-1">
+                  <a href="" class="nav-link">Camisa</a>
+                </li>
+                <li class="nav-item p-3 py-md-1">
+                  <a href="" class="nav-link">Vestido</a>
+                </li>
+                <li class="nav-item p-3 py-md-1">
+                  <a href="" class="nav-link">Jeans</a>
+                </li>
+                <li class="nav-item p-3 py-md-1">
+                  <a href="" class="nav-link">Blusas</a>
+                </li>
+              </ul>
         </div>
-    </div>
+    </section>
 </header>

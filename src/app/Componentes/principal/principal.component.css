@@ -21,18 +21,25 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  background: #16384c;
+  background: #26485c;
+}
+
+section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #26485c;
 }
 
 /* Se estableceran estilos como posicionamiento relativo, anchura de 1100px 
 y se centrará su contenido vertical y :horizontal */
 
 .container {
-  position: relative;
+  position: -ms-page;
   width: 1100px;
   display: flex;
-  justify-content: center;
-  align-content: center;
+  /* justify-content: center;
+  align-content: center; */
   flex-wrap: wrap;
   padding: 30px;
 }
@@ -101,3 +108,4 @@ También agregan un retraso en la transición. */
   margin-top: -40px;
   transition-delay: 0.3;
 } 
+
