@@ -1,28 +1,31 @@
+/* Estilos para el encabezado de la página */
 header {
-    background-color: #001530;
-  }
-  ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-  }
-  
-  li {
-    display: inline;
-    margin-right: 20px;
-  }
+  background-color: #001530; 
+}
 
+/* Estilos para las listas desordenadas (ul) en el encabezado */
+ul {
+  list-style-type: none; 
+  margin: 0;
+  padding: 0; 
+}
 
-  
-  
-  
+/* Estilos para los elementos de la lista (list items) en el encabezado */
+li {
+  display: inline; 
+  margin-right: 20px;
+}
+
+/* Estilos para el menú desplegable */
 .dropdown-menu{
-    top: 100%;
-    left: unset !important;
-    right: 0px !important;
-    margin-top: var(--bs-dropdown-spacer);
-  }
-  .CartContainer {
-    width: 300px;
-    padding: 5px;
-  }
+  top: 100%; 
+  left: unset; 
+  right: 0px ; 
+  margin-top: var(--bs-dropdown-spacer);
+}
+
+/* Estilos para el contenedor del carrito de compras */
+.CartContainer {
+  width: 300px; 
+  padding: 5px;
+}

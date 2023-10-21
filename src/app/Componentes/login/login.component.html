@@ -6,27 +6,34 @@
     <title>Login</title>
 </head>
 <body>
+    <!-- Las siguientes etiquetas representan el contenedor del form-->
     <section>
         <div class="form-box">
             <div class="form-value">
                 <form action="">
+                    <!-- Título del form-->
                     <h2>Login</h2>
+                    <!--Input de captura del Email-->
                     <div class="inputbox">
                         <i class="bi bi-envelope-fill"></i>
                         <input type="email" required>
                         <label for="">Email</label>
                     </div>
+                    <!--Input de captura de la contraseña-->
                     <div class="inputbox">
                         <i class="bi bi-lock-fill"></i>
                         <input type="password" required>
                         <label for="">Password</label>
                     </div>
+                    <!--Checkbox para la opcion de olvidar contraseña -->
                     <div class="forget">
                         <label for=""><input type="checkbox">  Recordarme 
                             <a href="#">Olvide la contraseña</a>
                         </label> 
                     </div>
+                    <!-- Botton que enviara los datos del registro-->
                     <button>Log in</button>
+                    <!-- Enlace al componente de registro en caso de  no tener una cuenta-->
                     <div class="register">
                         <p>No tengo una cuenta <a routerLink="/signup" >Registrarme</a></p>
                     </div>

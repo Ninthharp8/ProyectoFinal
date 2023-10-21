@@ -9,18 +9,6 @@
                     <span>AMJ SHOP</span>
                 </a>
             </div>
-            <!-- Botones de usuario -->
-            <div class="d-flex align-items-center"> 
-                <a routerLink="/profile" class="btn btn-outline-light me-3">
-                    <i class="bi bi-person me-1"></i> Mi Perfil
-                </a>
-                <a routerLink="/login" class="btn btn-outline-light me-3">
-                    <i class="bi bi-box-arrow-in-right me-1"></i> Iniciar Sesión
-                </a>
-                <a routerLink="/signup" class="btn btn-outline-light me-3">
-                    <i class="bi bi-person-plus me-1"></i> Registrarse
-                </a> 
-            </div> 
             <!-- Buscador-->
             <form class="d-flex me-3" role="search">
                 <div class="input-group ">
@@ -28,9 +16,23 @@
                 <button class="btn btn-outline-light" type="button" id="button-addon2"><i class="bi bi-search"></i></button>
                 </div>
             </form >
+            <!-- Botones de usuario -->
+            <div class="d-flex align-items-center"> 
+                <div class="btn-group">
+                    <button class="btn btn-outline-light me-3 dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      <i class="bi bi-person me-1"></i> Mi Perfil
+                    </button>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" routerLink="/login"><i class="bi bi-box-arrow-in-right me-1"></i> Iniciar Sesión</a></li>
+                      <li><a class="dropdown-item" routerLink="/signup"><i class="bi bi-person-plus me-1"></i> Registrarse</a></li>
+                    </ul>
+                  </div>
+            </div> 
             <!-- Aqui se define el carrito-->
             <div class="btn-group">
-                <button type="button" class="btn btn-outline-light dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false"><i class="bi bi-cart4"></i></button>
+                <button type="button" class="btn btn-outline-light dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                    <i class="bi bi-cart4"></i>
+                </button>
                 <ul class="dropdown-menu">
                 <li>
                     <div class="CartContainer">

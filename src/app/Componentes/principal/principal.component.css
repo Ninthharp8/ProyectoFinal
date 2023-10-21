@@ -1,33 +1,103 @@
+/* Estos estilos se aplican a todos los elementos (*) en la página y establecen el margen y el relleno en 0, 
+lo que elimina cualquier espacio adicional alrededor de los elementos. */
 
-nav {
-  background-color: #333;
-  
+*{
+  margin: 0;
+  padding: 0;
   
 }
+
+/* Establecen el ancho y la altura de toda la página al 100%, lo que significa que la página 
+ocupará todo el ancho y alto del viewport del navegador. */
+
+html, body{
+  width: 100%;
+  height: 100%;
+}
+
+/* Se define lo que contendra el cuerpo del css  */
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #16384c;
+}
+
+/* Se estableceran estilos como posicionamiento relativo, anchura de 1100px 
+y se centrará su contenido vertical y :horizontal */
 
 .container {
+  position: relative;
+  width: 1100px;
   display: flex;
-  flex-wrap: nowrap;
-  overflow-x: auto;
-  margin-top: 20px;
-  padding-bottom: 20px;
+  justify-content: center;
+  align-content: center;
+  flex-wrap: wrap;
+  padding: 30px;
 }
 
-.product {
-  width: 18rem;
-  margin-right: 20px;
-}
-.cart::after {
-  display: none !important;
+/* Se le aplican elementos con la clase "card" que están dentro de elementos con la clase "container" */
+
+.container .card {
+  position: relative;
+  max-width: 300px;
+  height: 215px;
+  background-color: #fff;
+  margin: 30px 10px;
+  padding: 20px 15px;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 5px 202px rgba(0,0,0,0,5);
+  transition: 0.3s ease-in-out;
 }
 
-.dropdown-menu{
-  top: 100%;
-  left: unset !important;
-  right: 0px !important;
-  margin-top: var(--bs-dropdown-spacer);
+/* Aumentan la altura de las tarjetas a 420 píxeles cuando se pasa el mouse sobre ellas, creando una animación de expansión. */
+
+.container .card:hover {
+  height: 420px;
 }
-.CartContainer {
-  width: 300px;
-  padding: 5px;
+
+/* Establecen estilos para un contenedor que alberga una imagen. */
+
+.container .card .imgBx {
+  position: relative;
+  width: 260px;
+  height: 260px;
+  top: -60px;
+  left: 20px;
+  z-index: 1;
+  box-shadow: 0 5px 20px rgba(0,0,0,0,5);
 }
+
+/* Establecen un ancho y alto máximo para las imágenes y aplican un borde redondeado a las mismas. */
+
+.container .card .imgBx img{
+  max-width: 260px;
+  max-height: 260px;
+  border-radius: 4px;
+}
+
+/* Establecen estilos para el contenido de la tarjeta, como el margen superior 
+negativo para superponerlo sobre la imagen y hacen que inicialmente no sea visible */
+
+.container .card .content{
+  position: relative;
+  margin-top: -140px;
+  padding: 10px 15px;
+  text-align: center;
+  color: #111;
+  visibility: hidden;
+  opacity: 0;
+  transition: 0.3s ease-in-out;
+}
+
+/* Cambian la visibilidad, la opacidad y el margen superior para mostrar y desplazar el contenido de la tarjeta. 
+También agregan un retraso en la transición. */
+
+.container .card:hover .content{
+  visibility: visible;
+  opacity: 1;
+  margin-top: -40px;
+  transition-delay: 0.3;
+} 

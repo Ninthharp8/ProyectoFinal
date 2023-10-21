@@ -1,0 +1,96 @@
+/* Importa la fuente 'Open Sans' con pesos 400 y 700 desde Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+
+/* Estilos para todos los elementos en el documento */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif; 
+}
+
+/* Estilos para el pie de página */
+
+.pie-pagina{
+    width: 100%;
+    background-color: #00001c;
+}
+
+/* Estilos para el logo del primer grupo (izquierdo)*/
+.pie-pagina .grupo-1{
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 50px;
+    padding: 45px 0px;
+}
+
+.pie-pagina .grupo-1 .box figure{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Estilos para la imagen del logo */
+.pie-pagina .grupo-1 .box figure img{
+    width: 250px;
+}
+
+/* Estilos para los encabezados */
+.pie-pagina .grupo-1 .box h2{
+    color: #fff;
+    margin-bottom: 25px;
+    font-size: 20px;
+}
+
+/* Estilos para los párrafos en las cajas  */
+.pie-pagina .grupo-1 .box p{
+    color: #efefef;
+    margin-bottom: 10px;
+}
+
+/* Estilos para los enlaces de redes sociales  */
+.pie-pagina .grupo-1 .red-social a{
+    display: inline-block;
+    text-decoration: none;
+    width: 45px;
+    height: 45px;
+    line-height: 45px;
+    color: #fff;
+    margin-right: 10px;
+    background-color: #00001c;
+    text-align: center;
+    transition: all 300ms ease;
+}
+
+/* Estilos para los enlaces de redes sociales cuando se desplazan sobre ellos */
+.pie-pagina .grupo-1 .red-social a:hover{
+    color:  #007bff;
+}
+
+/* Estilos para el grupo de en medio */
+.pie-pagina .grupo-2{
+    background-color: #0a1a2a;
+    padding: 15px 10px;
+    text-align: center;
+    color: #fff;
+}
+
+/* Estilos para el texto  */
+.pie-pagina .grupo-2 small{
+    font-size: 15px;
+}
+
+/* diseño responsive */
+@media screen and (max-width:800px){
+    .pie-pagina .grupo-1{
+        width: 90%;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 30px;
+        padding: 35px 0px;
+    }
+}
