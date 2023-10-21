@@ -1,0 +1,65 @@
+<header>
+    <nav class="navbar navbar-expand-lg"> 
+        <!-- Logo con url-->
+        <div class="container-fluid">
+            <div class="navbar-brand collapse navbar-collapse" id="navbarSupportedContent">
+                <button class="btn btn-outline-light  " type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions"><i class="bi bi-list"></i></button>
+                <a class="navbar-brand fs-2 fw-bold text-white" href="#">
+                    <img src="assets/Logo1.jpeg" alt="Logo AMJ Shop" style="width: 60px; height: 60px;">
+                    <span>AMJ SHOP</span>
+                </a>
+            </div>
+            <!-- Botones de usuario -->
+            <div class="d-flex align-items-center"> 
+                <a routerLink="/profile" class="btn btn-outline-light me-3">
+                    <i class="bi bi-person me-1"></i> Mi Perfil
+                </a>
+                <a routerLink="/login" class="btn btn-outline-light me-3">
+                    <i class="bi bi-box-arrow-in-right me-1"></i> Iniciar Sesión
+                </a>
+                <a routerLink="/signup" class="btn btn-outline-light me-3">
+                    <i class="bi bi-person-plus me-1"></i> Registrarse
+                </a> 
+            </div> 
+            <!-- Buscador-->
+            <form class="d-flex me-3" role="search">
+                <div class="input-group ">
+                <input type="text" class="form-control" placeholder="Buscar" aria-label="Buscar" aria-describedby="button-addon2">
+                <button class="btn btn-outline-light" type="button" id="button-addon2"><i class="bi bi-search"></i></button>
+                </div>
+            </form >
+            <!-- Aqui se define el carrito-->
+            <div class="btn-group">
+                <button type="button" class="btn btn-outline-light dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false"><i class="bi bi-cart4"></i></button>
+                <ul class="dropdown-menu">
+                <li>
+                    <div class="CartContainer">
+                    <div class="row">
+                        <div class="col-12 text-end">
+                        <button class="btn btn-sm btn-success">comprar</button>
+                        </div>
+                    </div>
+                    </div>
+                </li>
+                </ul>
+            </div><!--fin del div del carrito -->
+        </div>
+    </nav>
+    <!-- Este es la parte del offcanvas que se despliega al precionar el botton de hamburguesa-->
+    <div class="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions" aria-labelledby="offcanvasWithBothOptionsLabel">
+        <!-- Encabezado del off canvas -->
+        <div class="offcanvas-header">
+        <!--titulo-->
+        <h5 class="offcanvas-title" id="offcanvasWithBothOptionsLabel">Categorias</h5>
+        <!-- boton de cierre de pestaña off canvas-->
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <!-- Cuerpo del off canvas-->
+        <div class="offcanvas-body">
+        <!-- Enlaces que redireccionaran -->
+        <ul class=" ">
+            <li class="nav-item"><a class="nav-link " aria-current="page" href="#">Camisas</a></li>
+        </ul>
+        </div>
+    </div>
+</header>

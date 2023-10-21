@@ -7,6 +7,8 @@ import { LoginComponent } from './Componentes/login/login.component';
 import { SignupComponent } from './Componentes/signup/signup.component';
 import { PrincipalComponent } from './Componentes/principal/principal.component';
 import { ProductosComponent } from './Componentes/productos/productos.component';
+import { HeaderComponent } from './Componentes/header/header.component';
+import { FooterComponent } from './Componentes/footer/footer.component';
 
 
 @NgModule({
@@ -15,7 +17,9 @@ import { ProductosComponent } from './Componentes/productos/productos.component'
     LoginComponent,
     SignupComponent,
     PrincipalComponent,
-    ProductosComponent
+    ProductosComponent,
+    HeaderComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
