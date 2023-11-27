@@ -16,8 +16,10 @@
                     <!-- Representa un campo de entrada para el formulario en este caso el nombre del usuario-->
                     <div class="inputbox">
                         <i class="bi bi-person-fill"></i>
-                        <input type="text" required>
+                        <!-- <input type="text" required> -->
+                        <input type="text" id="nombre" [(ngModel)]="nombre" name="nombre" required aria-label="Nombre">
                         <label for="">Nombre</label>
+                        
                     </div>
                     <!-- Representa un campo de entrada para el formulario en este caso el correo electronico-->
                     <div class="inputbox">

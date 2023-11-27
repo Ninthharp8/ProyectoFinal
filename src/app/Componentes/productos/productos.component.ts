@@ -1,9 +1,10 @@
 import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
 import { ProductosService } from 'src/app/Servicios/productos.service';
 import { Producto } from 'src/app/Interfaces/producto';
 
 @Component({
-  selector: 'app-productos',
+  selector: 'app-SingleProduct',
   templateUrl: './productos.component.html',
   styleUrls: ['./productos.component.css']
 })
@@ -11,18 +12,26 @@ import { Producto } from 'src/app/Interfaces/producto';
 
 export class ProductosComponent implements OnInit {
 
-  productos: Producto[]=[];
+  producto: Producto | undefined;
 
-  constructor(private ProductsService: ProductosService){}
+  constructor(
+    private route: ActivatedRoute,
+    private productService: ProductosService
+  ) {}
 
-  ngOnInit() {
-    this.ProductsService.getProductos().subscribe(productos => {
-      this.productos = productos;});
+  ngOnInit(): void {
+    this.route.paramMap.subscribe((params) => {
+      const productName = params.get('name');
+      this.productService.getProducts().subscribe(
+        (productos) => {
+          this.producto = productos.find(producto => producto.name === productName);
+        },
+        (error) => {
+          console.error('Error al obtener detalles del producto:', error);
+        }
+      );
+    });
   }
 
-
-
-
-
-
+  
 }

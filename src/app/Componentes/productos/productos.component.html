@@ -1,22 +1,11 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-</head>
-<body>
-<!-- Implementacion de la busqueda de los productos-->
-
-<!-- <div *ngFor="let producto of productos!" class="card product" style="width: 18rem;">
-  <img [src]="producto.imageUrl" class="card-img-top" alt="...">
-  <div class="card-body">
-    <h5 class="card-title">{{ producto.name }}</h5>
-    <p class="card-text">Precio: {{ producto.price }}</p>
-    <a href="#" class="btn btn-primary">Agregar al carrito</a>
+<div *ngIf="producto" class="detalle-container">
+  <div class="detalle-imagen">
+    <img [src]="producto.image" alt="{{ producto.name }}" />
   </div>
-</div> -->
-  
-</body>
-</html>
-  
+  <div class="detalle-contenido">
+    <h2>{{ producto.name }}</h2>
+    <p class="detalle-precio">{{ producto.price | currency }}</p>
+    <!-- Agrega más detalles según sea necesario -->
+    <button class="btn btn-primary">Agregar al carrito</button>
+  </div>
+</div>
