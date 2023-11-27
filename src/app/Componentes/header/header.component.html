@@ -1,0 +1,81 @@
+<header>
+    <nav class="navbar navbar-expand-lg "> 
+        <div class="container-fluid">
+            <div class="navbar-brand collapse navbar-collapse text-info fw-semibold fs-4" id="navbarSupportedContent">
+                <!--Botton hamburguesa que despliega el offcanva-->
+                <button class="btn btn-outline-light  " type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions"><i class="bi bi-list"></i></button>
+                <!-- Logo con url-->
+                <a class="navbar-brand fs-2 fw-bold text-white" routerLink="/">
+                    <img src="assets/Logo1.jpeg" alt="Logo AMJ Shop" style="width: 60px; height: 60px;">
+                    <span>AMJ SHOP</span>
+                </a>
+            </div>
+            
+            <!-- Buscador-->
+            <form class="d-flex me-3" role="search">
+                <div class="input-group ">
+                <input type="text" class="form-control" placeholder="Buscar" aria-label="Buscar" aria-describedby="button-addon2">
+                <button class="btn btn-outline-light" type="button" id="button-addon2"><i class="bi bi-search"></i></button>
+                </div>
+            </form >
+            <!-- Botones de usuario -->
+            <div class="d-flex align-items-center"> 
+                <div class="btn-group">
+                    <button class="btn btn-outline-light me-3 dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      <i class="bi bi-person me-1"></i> Mi Perfil
+                    </button>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" routerLink="/login"><i class="bi bi-box-arrow-in-right me-1"></i> Iniciar Sesión</a></li>
+                      <li><a class="dropdown-item" routerLink="/signup"><i class="bi bi-person-plus me-1"></i> Registrarse</a></li>
+                    </ul>
+                  </div>
+            </div> 
+            <!-- Aqui se define el carrito-->
+            <div class="btn-group">
+                <button type="button" class="btn btn-outline-light dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                    <i class="bi bi-cart4"></i>
+                </button>
+                <ul class="dropdown-menu">
+                <li>
+                    <div class="CartContainer">
+                    <div class="row">
+                        <div class="col-12 text-end">
+                        <button class="btn btn-sm btn-success">Pagar</button>
+                        <button class="btn btn-sm btn-danger">Eliminar</button>
+                        </div>
+                    </div>
+                    </div>
+                </li>
+                </ul>
+            </div><!--fin del div del carrito -->
+        </div>
+    </nav>
+    <!-- Este es la parte del offcanvas que se despliega al precionar el botton de hamburguesa-->
+    <section class="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions" aria-labelledby="offcanvasWithBothOptionsLabel">
+        <!-- Encabezado del off canvas -->
+        <div class="offcanvas-header ">
+            <h5 class="offcanvas-title text-info text-white" id="offcanvasWithBothOptionsLabel">Categorias</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            
+        </div>
+        <hr>
+        <!-- Cuerpo del off canvas-->
+        <div class="offcanvas-body d-flex flex-column justify-content-between px-0 text-white">
+            <!-- Enlaces que redireccionian una consulta -->
+            <ul class="navbar-nav fs-5 justify-content-evenly">
+                <li class="nav-item p-3 py-md-1">
+                  <a href="" class="nav-link">Camisa</a>
+                </li>
+                <li class="nav-item p-3 py-md-1">
+                  <a href="" class="nav-link">Vestido</a>
+                </li>
+                <li class="nav-item p-3 py-md-1">
+                  <a href="" class="nav-link">Jeans</a>
+                </li>
+                <li class="nav-item p-3 py-md-1">
+                  <a href="" class="nav-link">Blusas</a>
+                </li>
+              </ul>
+        </div>
+    </section>
+</header>

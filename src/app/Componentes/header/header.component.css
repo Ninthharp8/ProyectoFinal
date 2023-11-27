@@ -1,0 +1,34 @@
+/* Estilos para el encabezado de la página */
+header {
+  background-color: #001530; 
+}
+
+/*Estilo del off canva*/
+.offcanvas {
+  background-color: #1e293b;
+}
+.navbar-toggler {
+  border: none;
+}
+.navbar-toggler:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+/* Estilos para el menú desplegable */
+.dropdown-menu{
+  top: 100%; 
+  left: unset; 
+  right: 0px ; 
+  margin-top: var(--bs-dropdown-spacer);
+}
+
+hr{
+  color: #fff;
+}
+
+/* Estilos para el contenedor del carrito de compras */
+.CartContainer {
+  width: 300px; 
+  padding: 5px;
+}
