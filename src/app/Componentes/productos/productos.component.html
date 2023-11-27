@@ -1,11 +1,71 @@
-<div *ngIf="producto" class="detalle-container">
-  <div class="detalle-imagen">
-    <img [src]="producto.image" alt="{{ producto.name }}" />
-  </div>
-  <div class="detalle-contenido">
-    <h2>{{ producto.name }}</h2>
-    <p class="detalle-precio">{{ producto.price | currency }}</p>
-    <!-- Agrega más detalles según sea necesario -->
-    <button class="btn btn-primary">Agregar al carrito</button>
-  </div>
-</div>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  
+<main>
+  <article>
+    <section class="section product" aria-label="product">
+      <div class="container">
+        <div class="product-slides">
+          <div class="slider-banner" data-slider>
+            <figure class="product-banner">
+                <img [src]="producto?.image" alt="{{producto?.name}} "width="600" height="600" loading="lazy" class="img-cover" />
+            </figure>
+            <figure class="product-banner">
+              <img [src]="producto?.image" width="600" height="600" loading="lazy" alt="{{producto?.name}} "width="600" height="600" class="img-cover">
+            </figure>
+            <figure class="product-banner">
+              <img [src]="producto?.image" width="600" height="600" loading="lazy" alt="{{producto?.name}}"
+                class="img-cover">
+            </figure>
+            <figure class="product-banner">
+              <img [src]="producto?.image" width="600" height="600" loading="lazy" alt="{{producto?.name}}"
+                class="img-cover">
+            </figure>
+          </div>
+          <button class="slide-btn prev" aria-label="Previous image" data-prev>
+            <i class="bi bi-caret-left"></i>
+          </button>
+          <button class="slide-btn next" aria-label="Next image" data-next>
+            <i class="bi bi-caret-right"></i>
+          </button>
+        </div>
+        <div class="product-content">
+          <p class="product-subtitle">AMJ SHOP</p>
+          <h1 class="h1 product-title">{{producto?.name}}</h1>
+          <p class="product-text">
+            These low-profile sneakers are your perfect casual wear companion. Featuring a
+            durable rubber outer sole, they’ll withstand everything the weather can offer.
+          </p>
+          <div class="wrapper">
+            <span class="price" data-total-price>{{producto?.price}}</span>
+            <span class="badge">50%</span>
+            <del class="del">{{producto?.price}}</del>
+          </div>
+          <div class="btn-group">
+            <div class="counter-wrapper">
+              <button class="counter-btn" data-qty-minus>
+                <i class="bi bi-caret-left"></i>
+              </button>
+              <span class="span" data-qty>1</span>
+              <button class="counter-btn" data-qty-plus>
+                <i class="bi bi-caret-right"></i>
+              </button>
+            </div>
+            <button class="cart-btn">
+              <i class="bi bi-caret-right"></i>
+              <span class="span">Add to cart</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+  </article>
+</main>
+</body>
+</html>
