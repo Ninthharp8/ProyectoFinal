@@ -1,0 +1,97 @@
+* [33m77577fe[m[33m ([m[1;31morigin/pre-merge[m[33m, [m[1;31morigin/main[m[33m, [m[1;31morigin/maik[m[33m, [m[1;31morigin/HEAD[m[33m, [m[1;32mmain[m[33m)[m  implementacion de soporte de backend
+* [33m415f252[m  normal
+* [33m54a973b[m  pages
+* [33m19a9229[m compilacion
+*   [33md12152e[m Merge branch 'main' of https://github.com/Ninthharp8/ProyectoFinal into pre-merge
+[32m|[m[33m\[m  
+[32m|[m * [33me197c53[m  definitivo
+* [33m|[m   [33mb121253[m Merge branch 'pre-merge' of https://github.com/Ninthharp8/ProyectoFinal into pre-merge
+[34m|[m[35m\[m [33m\[m  
+[34m|[m * [33m|[m [33meb064b1[m Delete CNAME
+[34m|[m * [33m|[m [33m7c205ee[m Create CNAME
+[34m|[m * [33m|[m [33m576ee59[m Delete CNAME
+[34m|[m * [33m|[m [33ma3d2538[m Create CNAME
+* [35m|[m [33m|[m [33m2b04691[m  ..
+[35m|[m[35m/[m [33m/[m  
+* [33m|[m [33mebb7fb1[m Merge branch 'main' of https://github.com/Ninthharp8/ProyectoFinal into pre-merge
+[36m|[m[33m\[m[33m|[m 
+[36m|[m * [33me7bd152[m  se desplego la Pagina
+[36m|[m * [33m941b48d[m Delete CNAME
+[36m|[m * [33mbd586d8[m Update CNAME
+[36m|[m * [33m1db93b1[m Create CNAME
+[36m|[m * [33m13a719a[m Delete CNAME
+[36m|[m * [33m1a26a51[m Update CNAME
+[36m|[m * [33m0d10e8d[m Update CNAME
+[36m|[m * [33m7b55e80[m Create CNAME
+* [1;31m|[m [33mf615533[m  prueba deploy
+[1;31m|[m[1;31m/[m  
+* [33me3b6e7a[m Cambios finales
+* [33m116185e[m Vista final del proyecto
+* [33m77d31bf[m  cambios
+* [33mcce71e5[m  actualice login y signup
+* [33ma30a0e8[m Agregue sign up
+* [33m37284bb[m  movi el header al app.component
+* [33m225180c[m  hice tantas cosas que ya ni me acuerdo que es jajaja
+* [33m91aab25[m  agregue el logo, titulo de la pagina, buscador, botones con iconos
+* [33m125f999[m ..
+* [33m67f9aa5[m  agregue un menu desplegable
+* [33m2dd3819[m  agregue boostrap al principal
+* [33m967e3d2[m  aplique boostrap al componente principal
+* [33mf67e998[m Cree modulos
+* [33m4e7e79d[m  agregue un componente de productos para automatizarlo cuando creemos una api
+* [33mdd42264[m borre modulos
+* [33m7bf9903[m se editó las pagina principal
+* [33mdba4175[m  resolvi el bug de que salia 2 veces
+* [33m63ff14b[m  as
+* [33m648cd06[m  se resolvieron las colisiones
+*   [33m17b1169[m  se agrego el routing
+[1;32m|[m[1;33m\[m  
+[1;32m|[m * [33m94d101d[m diseño provisional
+* [1;33m|[m [33m899aa32[m modificacion del css
+* [1;33m|[m [33m98d30db[m agregue el routing
+* [1;33m|[m [33mca3bdb0[m agregue icons y boostrap en el header html
+[1;33m|[m[1;33m/[m  
+* [33m1c62e45[m Agregue más comandos
+* [33mfa047b7[m agregue comandos en el readmi
+* [33mb2f5a52[m Update README.md
+* [33m5598ba2[m ponte a chambear
+* [33madac5a0[m ok
+* [33m69ff827[m Prueba descargas
+*   [33m37423e2[m se va a hacer merge
+[1;34m|[m[1;35m\[m  
+[1;34m|[m * [33m238101f[m edicion index
+[1;34m|[m * [33me3f1cad[m  se borro index
+[1;34m|[m *   [33m6546214[m Merge branch 'main' of https://github.com/Ninthharp8/ProyectoFinal
+[1;34m|[m [1;36m|[m[31m\[m  
+[1;34m|[m * [31m|[m [33m2548aee[m  se movio index
+[1;34m|[m * [31m|[m [33m3419f19[m se movio index
+* [31m|[m [31m|[m [33mb070921[m se trabajo en componente login
+* [31m|[m [31m|[m [33m966e2e3[m cambie la carpeta de servicios
+* [31m|[m [31m|[m [33m7b53fa8[m Se estructuró el directorio
+[31m|[m [31m|[m [31m|[m * [33mc1ecc22[m[33m ([m[1;36mHEAD -> [m[1;32mrama_emiliano[m[33m, [m[1;31morigin/rama_emiliano[m[33m)[m Modificación src/styles.css
+[31m|[m [31m|[m [31m|[m[31m/[m  
+[31m|[m [31m|[m * [33m84b11ca[m  primer commit de omar
+[31m|[m [31m|[m[31m/[m  
+[31m|[m * [33me6a43a2[m Eliminar src/index.html
+[31m|[m * [33mde2b503[m  se cambio de lugar el index
+[31m|[m * [33mbd4e4d4[m  se agrego esto
+[31m|[m *   [33m0a1ee35[m Merge branch 'main' of https://github.com/Ninthharp8/ProyectoFinal
+[31m|[m [33m|[m[31m\[m  
+[31m|[m [33m|[m[31m/[m  
+[31m|[m[31m/[m[33m|[m   
+* [33m|[m   [33m81ea1f7[m asdsfd
+[35m|[m[36m\[m [33m\[m  
+[35m|[m * [33m\[m   [33mb07f7ba[m se acepto cambio
+[35m|[m [1;31m|[m[1;32m\[m [33m\[m  
+[35m|[m * [1;32m|[m [33m|[m [33m837e321[m asd
+[35m|[m * [1;32m|[m [33m|[m [33m07d9418[m se elimino el contenido del html
+[35m|[m [1;32m|[m [1;32m|[m * [33mba76745[m  actualizacion de jason
+[35m|[m [1;32m|[m[35m_[m[1;32m|[m[35m/[m  
+[35m|[m[35m/[m[1;32m|[m [1;32m|[m   
+* [1;32m|[m [1;32m|[m [33mce433af[m  ahora si prueba final
+[1;32m|[m [1;32m|[m[1;32m/[m  
+[1;32m|[m[1;32m/[m[1;32m|[m   
+* [1;32m|[m [33m2280a25[m borre el componente html
+[1;32m|[m[1;32m/[m  
+* [33m88aa99a[m se subio el proyecto
+* [33m9c31a66[m first commit
