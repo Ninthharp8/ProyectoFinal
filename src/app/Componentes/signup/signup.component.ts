@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { AuthService } from 'src/app/Servicios/auth.service';
 
 @Component({
   selector: 'app-signup',
@@ -11,13 +12,26 @@ nombre : string = '';
 email : string = '';
 password : string = '';
 
+constructor(private authService: AuthService){}
+
 register() {
-  // Aquí puedes manejar la lógica de registro, por ejemplo, llamando a tu servicio de registro
-  console.log('Registro iniciado');
+  this.authService.register(this.nombre, this.email, this.password).subscribe(
+    (response) => {
+      console.log('Registro exitoso:', response);
+      // Puedes redirigir al usuario a la página de inicio de sesión u otra página aquí
+    },(error) => {
+      console.error('Error durante el registro:', error);
+      // Manejar el error y proporcionar retroalimentación al usuario si es necesario
+    });
+}
+
+eng(){
+  console.log('Registro exitoso');
   console.log('Nombre:', this.nombre);
   console.log('Correo electrónico:', this.email);
   console.log('Contraseña:', this.password);
-  // Aquí puedes agregar la lógica para enviar el formulario al backend
+  
+  this.register();
 }
 
 }
