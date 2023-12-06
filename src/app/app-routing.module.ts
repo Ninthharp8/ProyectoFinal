@@ -6,6 +6,7 @@ import { PrincipalComponent } from './Componentes/principal/principal.component'
 import { ProductosComponent } from './Componentes/productos/productos.component';
 import { CarritoComponent } from './Componentes/carrito/carrito.component';
 import { gracias } from './Componentes/thx/gracias';
+import { Pagina2Component } from './Componentes/pagina2/pagina2.component';
 
 const routes: Routes = [
   {path: 'login', component:LoginComponent},
@@ -13,6 +14,7 @@ const routes: Routes = [
   { path: 'producto/:name', component: ProductosComponent},
   {path: 'carrito', component: CarritoComponent},
   {path:'gracias', component:gracias},
+  {path:'pagina2', component:Pagina2Component},
   {path: '', component: PrincipalComponent}
 ]
 

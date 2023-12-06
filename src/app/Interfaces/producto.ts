@@ -3,5 +3,6 @@ export interface Producto {
   price: number;
   image: string;
   mensajeConfirmacion?: string;
+  category: string;
   // Otros campos si los tienes
 }

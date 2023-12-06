@@ -14,6 +14,7 @@ import { FooterComponent } from './Componentes/footer/footer.component';
 import { PaginacionComponent } from './Componentes/paginacion/paginacion.component';
 import { CarritoComponent } from './Componentes/carrito/carrito.component';
 import { gracias } from './Componentes/thx/gracias';
+import { Pagina2Component } from './Componentes/pagina2/pagina2.component';
 
 
 @NgModule({
@@ -27,7 +28,8 @@ import { gracias } from './Componentes/thx/gracias';
     FooterComponent,
     PaginacionComponent,
     CarritoComponent,
-    gracias
+    gracias,
+    Pagina2Component
   ],
   imports: [
     BrowserModule,
