@@ -39,9 +39,10 @@
               <button class="btn btn-outline-dark me-3 " type="button" (click)="addtocart()" >
                 <i class="bi bi-cart4 me-1"></i> Añadir al carrito
               </button>
+              <div *ngIf="mensajeConfirmacion"><i class="bi bi-cart-check"></i></div>
             </div>
           </div>
-          <div *ngIf="mensajeConfirmacion">{{ mensajeConfirmacion }}</div>
+          
         </div>
       </div>
     </section>

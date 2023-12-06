@@ -1,10 +1,13 @@
 // cart.service.ts
 import { Injectable } from '@angular/core';
+import { BehaviorSubject } from 'rxjs';
+import { map } from 'rxjs/operators';
 
 @Injectable({
   providedIn: 'root'
 })
 export class CartService {
+  
   private cartData: any = { data: [] }; // Inicializa los datos del carrito como un array vacío
 
   constructor() {}
@@ -23,7 +26,6 @@ export class CartService {
       this.cartData.data.push({ product: product, numInCart: 1 });
     }
   }
-
   removeFromCart(cartItem: any): void {
     // Implementa la lógica para quitar un producto del carrito
     const index = this.cartData.data.indexOf(cartItem);

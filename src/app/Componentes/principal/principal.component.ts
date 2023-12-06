@@ -14,6 +14,7 @@ export class PrincipalComponent implements OnInit {
   products: Producto[] = [];
   carrito: Producto[] = [];
   productoSeleccionado: Producto | undefined;
+ 
 
   constructor(private productService: ProductosService,
     private router:Router,
@@ -23,6 +24,7 @@ export class PrincipalComponent implements OnInit {
     this.productService.getProducts().subscribe(
       (data) => {
         this.products = data;
+        this.products.forEach(product => (product.mensajeConfirmacion = ''));
       },
       (error) => {
         console.error('Error al obtener productos:', error);
@@ -32,6 +34,11 @@ export class PrincipalComponent implements OnInit {
 
   addToCart(producto: Producto): void {
     this.cartService.addToCart(producto);
+    producto.mensajeConfirmacion = 'Agregado al carrito';
+
+    setTimeout(() => {
+      producto.mensajeConfirmacion = '';
+    }, 1000);
   }
   verDetalle(producto: Producto): void {
     this.router.navigate(['/producto', producto.name]);

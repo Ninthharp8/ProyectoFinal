@@ -38,7 +38,7 @@ export class ProductosComponent implements OnInit {
   addtocart(): void {
     if (this.producto) {
       this.cartService.addToCart(this.producto);
-      this.mensajeConfirmacion = 'Producto agregado al carrito correctamente';
+      this.mensajeConfirmacion = 'Agregado';
     }
   }
 

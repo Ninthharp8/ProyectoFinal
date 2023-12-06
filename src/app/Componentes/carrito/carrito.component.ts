@@ -1,9 +1,9 @@
 // cart.component.ts
 import { Component, OnInit } from '@angular/core';
-import { CartService } from 'src/app/services/cart.service'; 
+import { CartService } from 'src/app/services/cart.service'; // Ajusta la ruta según sea necesario
 
 @Component({
-  selector: 'app-carrito',
+  selector: 'carrito-app',
   templateUrl: './carrito.component.html',
   styleUrls: ['./carrito.component.css']
 })
