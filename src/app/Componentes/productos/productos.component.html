@@ -16,17 +16,6 @@
             <figure class="product-banner">
                 <img [src]="producto?.image" alt="{{producto?.name}} "width="600" height="600" loading="lazy" class="img-cover" />
             </figure>
-            <figure class="product-banner">
-              <img [src]="producto?.image" width="600" height="600" loading="lazy" alt="{{producto?.name}} "width="600" height="600" class="img-cover">
-            </figure>
-            <figure class="product-banner">
-              <img [src]="producto?.image" width="600" height="600" loading="lazy" alt="{{producto?.name}}"
-                class="img-cover">
-            </figure>
-            <figure class="product-banner">
-              <img [src]="producto?.image" width="600" height="600" loading="lazy" alt="{{producto?.name}}"
-                class="img-cover">
-            </figure>
           </div>
           <button class="slide-btn prev" aria-label="Previous image" data-prev>
             <i class="bi bi-caret-left"></i>
@@ -43,25 +32,16 @@
             durable rubber outer sole, they’ll withstand everything the weather can offer.
           </p>
           <div class="wrapper">
-            <span class="price" data-total-price>{{producto?.price}}</span>
-            <span class="badge">50%</span>
-            <del class="del">{{producto?.price}}</del>
+            <span class="price" data-total-price>${{producto?.price}}</span>
           </div>
-          <div class="btn-group">
+          <div class="display-flex">
             <div class="counter-wrapper">
-              <button class="counter-btn" data-qty-minus>
-                <i class="bi bi-caret-left"></i>
-              </button>
-              <span class="span" data-qty>1</span>
-              <button class="counter-btn" data-qty-plus>
-                <i class="bi bi-caret-right"></i>
+              <button class="btn btn-outline-dark me-3 " type="button" (click)="addtocart()" >
+                <i class="bi bi-cart4 me-1"></i> Añadir al carrito
               </button>
             </div>
-            <button class="cart-btn">
-              <i class="bi bi-caret-right"></i>
-              <span class="span">Add to cart</span>
-            </button>
           </div>
+          <div *ngIf="mensajeConfirmacion">{{ mensajeConfirmacion }}</div>
         </div>
       </div>
     </section>

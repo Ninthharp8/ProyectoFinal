@@ -21,6 +21,7 @@ export class ProductosService {
       { name: 'Prenda 2', price: 400.00, image: '../../../assets/p2.jpg' },
       { name: 'Prenda 3', price: 400.00, image: '../../../assets/p3.jpg' },
       { name: 'Prenda 4', price: 400.00, image: '../../../assets/camisa.png' },
+      {name: 'Prenda 5',price: 400.00, image: 'https://m.media-amazon.com/images/I/61qfmFBCaLL._AC_SX679_.jpg'},
     ]);
   }
 }

@@ -2,6 +2,8 @@ import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { ProductosService } from 'src/app/Servicios/productos.service';
 import { Producto } from 'src/app/Interfaces/producto';
+import { CartService } from 'src/app/services/cart.service';
+
 
 @Component({
   selector: 'app-SingleProduct',
@@ -13,10 +15,11 @@ import { Producto } from 'src/app/Interfaces/producto';
 export class ProductosComponent implements OnInit {
 
   producto: Producto | undefined;
-
+  mensajeConfirmacion: string = '';
   constructor(
     private route: ActivatedRoute,
-    private productService: ProductosService
+    private productService: ProductosService,
+    private cartService: CartService
   ) {}
 
   ngOnInit(): void {
@@ -31,6 +34,13 @@ export class ProductosComponent implements OnInit {
         }
       );
     });
+  }
+
+  addtocart(): void {
+    if (this.producto) {
+      this.cartService.addToCart(this.producto);
+      this.mensajeConfirmacion = 'Producto agregado al carrito correctamente';
+    }
   }
 
   
