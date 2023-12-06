@@ -13,7 +13,7 @@ import { HeaderComponent } from './Componentes/header/header.component';
 import { FooterComponent } from './Componentes/footer/footer.component';
 import { PaginacionComponent } from './Componentes/paginacion/paginacion.component';
 import { CarritoComponent } from './Componentes/carrito/carrito.component';
-import { ConfirmacionModalComponent } from './Componentes/confirmacion-modal/confirmacion-modal.component';
+import { gracias } from './Componentes/thx/gracias';
 
 
 @NgModule({
@@ -27,7 +27,7 @@ import { ConfirmacionModalComponent } from './Componentes/confirmacion-modal/con
     FooterComponent,
     PaginacionComponent,
     CarritoComponent,
-    ConfirmacionModalComponent
+    gracias
   ],
   imports: [
     BrowserModule,
