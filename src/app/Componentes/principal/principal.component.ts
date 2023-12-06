@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { ProductosService } from 'src/app/Servicios/productos.service';
 import { Producto } from 'src/app/Interfaces/producto';
+import { CartService } from 'src/app/services/cart.service';
 
 @Component({
   selector: 'app-principal',
@@ -14,7 +15,9 @@ export class PrincipalComponent implements OnInit {
   carrito: Producto[] = [];
   productoSeleccionado: Producto | undefined;
 
-  constructor(private productService: ProductosService,private router:Router) {}
+  constructor(private productService: ProductosService,
+    private router:Router,
+    private cartService:CartService) {}
 
   ngOnInit(): void {
     this.productService.getProducts().subscribe(
@@ -28,8 +31,7 @@ export class PrincipalComponent implements OnInit {
   }
 
   addToCart(producto: Producto): void {
-    this.carrito.push(producto);
-    // Puedes agregar lógica adicional aquí, como mostrar un mensaje de confirmación.
+    this.cartService.addToCart(producto);
   }
   verDetalle(producto: Producto): void {
     this.router.navigate(['/producto', producto.name]);
