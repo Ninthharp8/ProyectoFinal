@@ -1,16 +1,17 @@
+
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { ProductosService } from 'src/app/Servicios/productos.service';
 import { Producto } from 'src/app/Interfaces/producto';
 import { CartService } from 'src/app/services/cart.service';
 
-@Component({
-  selector: 'app-principal',
-  templateUrl: './principal.component.html',
-  styleUrls: ['./principal.component.css']
-})
 
-export class PrincipalComponent implements OnInit {
+@Component({
+  selector: 'app-pagina2',
+  templateUrl: './pagina2.component.html',
+  styleUrls: ['./pagina2.component.css']
+})
+export class Pagina2Component {
   products: Producto[] = [];
   carrito: Producto[] = [];
   productoSeleccionado: Producto | undefined;
@@ -28,7 +29,7 @@ export class PrincipalComponent implements OnInit {
 
   cargarProductos() {
     // Utilizando tu método getProducts del servicio
-    this.productService.getProducts().subscribe(
+    this.productService.getProducts2().subscribe(
       (data) => {
         // Lógica para obtener productos de la página actual (simulado)
         const productosPorPagina = this.obtenerProductosPorPagina(data, this.paginaActual);
