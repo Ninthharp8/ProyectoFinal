@@ -9,6 +9,10 @@
                     <img src="assets/Logo1.jpeg" alt="Logo AMJ Shop" style="width: 60px; height: 60px;">
                     <span>AMJ SHOP</span>
                 </a>
+                <button type="button" class="btn btn-outline-light" routerLink="/" >
+                  Inicio
+                </button>
+
             </div>
             
             <!-- Buscador-->
@@ -32,21 +36,9 @@
             </div> 
             <!-- Aqui se define el carrito-->
             <div class="btn-group">
-                <button type="button" class="btn btn-outline-light dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
-                    <i class="bi bi-cart4"></i>
-                </button>
-                <ul class="dropdown-menu">
-                <li>
-                    <div class="CartContainer">
-                    <div class="row">
-                        <div class="col-12 text-end">
-                        <button class="btn btn-sm btn-success">Pagar</button>
-                        <button class="btn btn-sm btn-danger">Eliminar</button>
-                        </div>
-                    </div>
-                    </div>
-                </li>
-                </ul>
+              <button type="button" class="btn btn-outline-light" routerLink="/carrito" >
+                <i class="bi bi-cart4"></i>
+              </button>
             </div><!--fin del div del carrito -->
         </div>
     </nav>
@@ -56,7 +48,6 @@
         <div class="offcanvas-header ">
             <h5 class="offcanvas-title text-info text-white" id="offcanvasWithBothOptionsLabel">Categorias</h5>
             <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-            
         </div>
         <hr>
         <!-- Cuerpo del off canvas-->
@@ -64,7 +55,7 @@
             <!-- Enlaces que redireccionian una consulta -->
             <ul class="navbar-nav fs-5 justify-content-evenly">
                 <li class="nav-item p-3 py-md-1">
-                  <a href="" class="nav-link">Camisa</a>
+                  <a  class="nav-link">Camisa</a>
                 </li>
                 <li class="nav-item p-3 py-md-1">
                   <a href="" class="nav-link">Vestido</a>
